@@ -22,9 +22,11 @@ const images = [
   },
 ];
 const creatGallery = document.querySelector(".gallery");
+creatGallery.classList.add("list");
 const newImages = images
-  .map((image) => `<li><img src =${image.url} alt = ${image.alt}></li>`)
+  .map(
+    (image) =>
+      `<li><img src =${image.url} alt = ${image.alt} width = "400"></li>`
+  )
   .join("");
 creatGallery.insertAdjacentHTML("beforeend", newImages);
-
-newImages.style.listStyle = "none";
