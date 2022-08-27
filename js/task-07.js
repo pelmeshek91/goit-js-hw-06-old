@@ -1,5 +1,5 @@
-const asp = document.querySelector("#font-size-control");
-asp.addEventListener("input", (event) => {
+const form = document.querySelector("#font-size-control");
+form.addEventListener("input", (event) => {
   const { target } = event;
   if (
     target.value >= target.getAttribute("min") &&
