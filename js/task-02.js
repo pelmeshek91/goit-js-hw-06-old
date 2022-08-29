@@ -15,3 +15,15 @@ const addIngredients = ingredients.map((ingredient) => {
   return itemIngredients;
 });
 listIngredients.append(...addIngredients);
+
+/* 2-й варіант без create */
+
+/* const listIngredients = document.querySelector("#ingredients");
+const newItemList = addIngredients(ingredients);
+
+function addIngredients(ingredients) {
+  return ingredients
+    .map((ingredient) => `<li class=item>${ingredient}</li>`)
+    .join("");
+}
+listIngredients.innerHTML = newItemList; */
